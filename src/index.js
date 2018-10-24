@@ -3,8 +3,22 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import {BrowserRouter, Route, Link} from 'react-router-dom';
+import CssBaseline from '@material-ui/core/CssBaseline';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(
+    <React.Fragment>
+    <CssBaseline>
+    <BrowserRouter>
+<App />
+</BrowserRouter>
+</CssBaseline>
+</React.Fragment>
+, 
+
+document.getElementById('root')
+
+);
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
